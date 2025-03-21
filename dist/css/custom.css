@@ -1,0 +1,123 @@
+/* VARIAVEIS */
+:root {
+  /* BORDAS */
+  --border-sm: 6px;
+  --border-m: 8px;
+
+  /* CORES */
+  --proex-verde: #00796B;
+  --proex-preto: #111;
+  --proex-branco: #ffffff;
+  --proex-bege: #F9F9F9;
+
+  /* PESOS DE FONTE */
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --semibold: 600;
+  --bold: 700;
+
+}
+
+* {
+  accent-color: var(--proex-verde)
+}
+
+/* GERAL */
+.float-none {
+  float: none !important
+}
+
+.botao {
+  padding: 10px 16px;
+  font-size: 16px;
+  line-height: 1.125;
+  border-radius: var(--border-sm);
+  background-color: var(--proex-verde);
+  color: var(--proex-branco);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.botao:hover {
+  background-color: #034941;
+  transition: all 0.3s ease-in-out;
+}
+
+
+/* PAGINA */
+.content-header {
+  margin-bottom: 64px;
+}
+
+.content-header .titulo-h1 {
+  font-size: 40px !important;
+}
+ 
+@media screen and (max-width: 1300px) {
+  .content-linha-1024 {
+    width: 100% !important;
+  }
+
+  .conteudo-principal .formularios .col-xs-6:first-child{
+    margin-bottom: 40px;
+  }
+}
+
+/* CAIXA DE FORMS */
+.caixa {
+  background-color: var(--proex-bege);
+  border-radius: var(--border-m);
+  overflow: hidden;
+}
+
+.caixa-titulo {
+  margin: 0 !important;
+  padding: 16px 30px;
+  background-color: var(--proex-verde);
+  color: var(--proex-branco);
+  font-size: 20px;
+  font-weight: var(--medium);
+}
+
+.caixa-conteudo {
+  padding: 30px;
+}
+
+.caixa-conteudo .conteudo-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.caixa-conteudo .form-group {
+  margin-bottom: 32px;
+}
+
+.caixa-conteudo .form-group label {
+  font-size: 15px;
+  font-weight: var(--regular);
+  color: var(--proex-preto);
+  margin-bottom: 10px;
+}
+
+.caixa-conteudo .form-group input, .caixa-conteudo .form-group select {
+  border: 1px solid #CECECE;
+  border-radius: var(--border-m);
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  height: fit-content !important;
+}
+
+.caixa-conteudo .form-group textarea {
+  border: 1px solid #CECECE;
+  border-radius: var(--border-m);
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.caixa-conteudo .form-group .radio.col-md-4 {
+  margin: 0 !important;
+}
