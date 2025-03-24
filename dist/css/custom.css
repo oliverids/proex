@@ -29,6 +29,7 @@
 }
 
 .botao {
+  border: none;
   padding: 10px 16px;
   font-size: 16px;
   line-height: 1.125;
@@ -46,6 +47,12 @@
 
 
 /* PAGINA */
+.container {
+  width: 100%;
+  max-width: 1216px;
+  margin: 0 auto;
+}
+
 .content-header {
   margin-bottom: 64px;
 }
@@ -53,13 +60,13 @@
 .content-header .titulo-h1 {
   font-size: 40px !important;
 }
- 
+
 @media screen and (max-width: 1300px) {
   .content-linha-1024 {
     width: 100% !important;
   }
 
-  .conteudo-principal .formularios .col-xs-6:first-child{
+  .conteudo-principal .formularios .col-xs-6:first-child {
     margin-bottom: 40px;
   }
 }
@@ -120,4 +127,50 @@
 
 .caixa-conteudo .form-group .radio.col-md-4 {
   margin: 0 !important;
+}
+
+/* BOTÕES FORMULARIO */
+.formularios-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 24px;
+  margin: 30px 0 80px;
+}
+
+/* ESTILO TABELAS */
+.tabelas {
+  margin-bottom: 72px;
+}
+
+.tabelas .caixa-conteudo {
+  overflow: auto;
+}
+
+.tabelas table {
+  min-width: fit-content;
+  border-radius: 8px;
+  margin: 0 0 30px !important;
+  overflow: hidden;
+}
+
+.tabelas table tbody, .tabelas table tbody tr {
+  border: 1px solid #CECECE;
+}
+
+.tabelas table thead th {
+  background-color: var(--proex-verde);
+  color: var(--proex-branco);
+  font-weight: var(--regular);
+  font-size: 12px;
+  font-weight: var(--medium);
+  text-align: center;
+  white-space: nowrap;
+  padding: 10px 16px;
+}
+
+.tabelas td.actions {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
 }
