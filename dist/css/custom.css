@@ -164,7 +164,7 @@
   font-weight: var(--regular);
   font-size: 12px;
   font-weight: var(--medium);
-  text-align: center;
+  text-align: left;
   white-space: nowrap;
   padding: 10px 16px;
 }
